@@ -23,7 +23,7 @@ La implementación está hecha en Java, con estructura de paquetes por TP:
 ```text
 AyED/
 |-- ENUNCIADOS_PRÁCTICA/
-|-- PRÁCTICA/AYED
+|-- PRÁCTICA/
 |   |-- src/
 |   |   |-- module-info.java
 |   |   |-- tp1/
