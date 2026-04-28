@@ -16,8 +16,10 @@ public class ParcialArboles {
 		else {
 			List<GeneralTree<Integer>> children = arbol.getChildren();
 			if (arbol.getData().equals(minimo(children))) cumple = true;
-			for (GeneralTree<Integer> child: children)
-				cumple = cumple && recursion(child);
+			if (cumple) {
+				for (GeneralTree<Integer> child: children)
+					cumple = cumple && recursion(child);
+			}
 		}
 		return cumple;
 	}
