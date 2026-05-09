@@ -12,13 +12,13 @@ public class AnalizadorArbol {
 			cant = cola.size(); total = 0;
 			for (int i = 0; i < cant;i++) {
 				GeneralTree<AreaEmpresa> ab = cola.dequeue();
-				total = total + ab.getData().getDelay();;
+				total += ab.getData().getDelay();;
 				List<GeneralTree<AreaEmpresa>> children = ab.getChildren();
 				for (GeneralTree<AreaEmpresa> child : children) {
 					cola.enqueue(child);
 				}
-			promedioMax = Math.max(promedioMax,total/cant);
 			}
+			promedioMax = Math.max(promedioMax,total/cant);
 		}
 		return promedioMax;
 	}
