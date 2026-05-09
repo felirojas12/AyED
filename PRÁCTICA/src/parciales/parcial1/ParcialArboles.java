@@ -25,7 +25,7 @@ public class ParcialArboles {
 						recorrer(child,resultado,camino);
 				}
 			}
-		camino.remove(camino.size() - 1);
+		camino.removeLast();
 		}
 	
 	private static boolean esPar(int valor) {
